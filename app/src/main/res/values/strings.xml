@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ToolBox</string>
+
+    <string name="launch_screen_text">Toolbox</string>
+    <string name="launch_screen_calculator_text">Calculator</string>
+
+</resources>
