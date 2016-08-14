@@ -1,26 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:background="@color/calculatorBackground"
+        android:orientation="vertical"
+        android:weightSum="10">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:text="Results below this textview" />
 
         <TextView
+            android:id="@+id/result_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/result_view" />
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/calculatorResultsWindow" />
 
-        <Button
-            android:text="Calculate button"
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/calculate_button" />
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <include layout="@layout/calcuator_number_pad" />
+        </LinearLayout>
+
+
     </LinearLayout>
 </layout>

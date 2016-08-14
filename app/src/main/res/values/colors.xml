@@ -3,4 +3,11 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!-- Calculator -->
+    <color name="calculatorBackground">#D3D3D3</color>
+    <color name="calculatorButton">#D3D3D3</color>
+    <color name="calculatorButtonBorder">#121f1f</color>
+    <color name="calculatorResultsWindow">#fefdfb</color>
+
 </resources>

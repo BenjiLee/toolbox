@@ -20,14 +20,14 @@ public class CalculatorActivity extends AppCompatActivity implements CalculatorC
         super.onCreate(savedInstanceState);
         calculatorBinding = DataBindingUtil.setContentView(this, R.layout.calculator);
 
-        userActionsListener = new CalculatorPresenter(CalculatorActivity.this);
+        userActionsListener = new CalculatorPresenter();
 
-        calculatorBinding.calculateButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                userActionsListener.calculate();
-            }
-        });
+//        calculatorBinding.calculateButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                userActionsListener.calculate();
+//            }
+//        });
     }
 
     @Override
