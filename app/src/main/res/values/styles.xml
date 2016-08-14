@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="LaunchTitleText">
+        <item name="android:textSize">@dimen/launch_screen_title_text</item>
+    </style>
+
 </resources>
