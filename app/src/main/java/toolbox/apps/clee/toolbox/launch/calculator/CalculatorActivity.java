@@ -4,21 +4,20 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.Toast;
 
 import toolbox.apps.clee.toolbox.R;
-import toolbox.apps.clee.toolbox.databinding.CalculatorBinding;
+import toolbox.apps.clee.toolbox.databinding.CalculatorActivityBinding;
 
 public class CalculatorActivity extends AppCompatActivity implements CalculatorContract.View {
 
-    private CalculatorBinding calculatorBinding;
+    private CalculatorActivityBinding calculatorActivityBinding;
     private CalculatorContract.UserActionsListener userActionsListener;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        calculatorBinding = DataBindingUtil.setContentView(this, R.layout.calculator);
+        calculatorActivityBinding = DataBindingUtil.setContentView(this, R.layout.calculator_activity);
 
         userActionsListener = new CalculatorPresenter();
 

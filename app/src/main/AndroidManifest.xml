@@ -16,7 +16,8 @@
         </activity>
         <activity
             android:name=".launch.calculator.CalculatorActivity"
-            android:label="@string/calculator_text">
+            android:label="@string/calculator_text"
+            android:screenOrientation="portrait">
         </activity>
 
     </application>

@@ -21,7 +21,7 @@
     <string name="division_sign">/</string>
     <string name="multiplication_sign">x</string>
     <string name="clear_text">clear</string>
-    <string name="delete_text">delete</string>
+    <string name="delete_text">del</string>
     <string name="decimal_text">.</string>
 
 </resources>
