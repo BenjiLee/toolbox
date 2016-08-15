@@ -27,7 +27,9 @@
             android:layout_height="0dp"
             android:layout_weight="6">
 
-            <include layout="@layout/calculator_number_pad" />
+            <include
+                android:id="@+id/number_pad"
+                layout="@layout/calculator_number_pad" />
         </LinearLayout>
 
 

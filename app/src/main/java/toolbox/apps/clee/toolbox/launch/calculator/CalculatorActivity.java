@@ -4,6 +4,7 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Toast;
 
 import toolbox.apps.clee.toolbox.R;
@@ -21,12 +22,12 @@ public class CalculatorActivity extends AppCompatActivity implements CalculatorC
 
         userActionsListener = new CalculatorPresenter();
 
-//        calculatorBinding.calculateButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                userActionsListener.calculate();
-//            }
-//        });
+        calculatorActivityBinding.numberPad.equationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                userActionsListener.calculate();
+            }
+        });
     }
 
     @Override
