@@ -27,6 +27,7 @@ public class CalculatorButtonWidget extends Button {
         } else {
             setBackgroundDrawable(getResources().getDrawable(R.drawable.calculator_button));
         }
+        setTextSize(getResources().getDimension(R.dimen.calculate_button_text));
     }
 
 }
